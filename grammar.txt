@@ -1,0 +1,30 @@
+//This is the grammar laid out about this language
+
+sentence: np_sub* vp (conjunc sentence) 
+
+np_sub: np | 'a' sentence
+
+vp: verb adverbs* 
+
+verb: (KO-) (LO-) VERB (-BO | -BE | -BI) (-LA | -LE)  
+
+adverb: (SOT- adjective) | ADVERB
+
+//A noun phrase is a noun followed by maybe a possessor noun and some adjectives
+np: noun (noun) adjective* (conjunc np)
+
+adjective: (LO-) (BI- | BA-) ADJECTIVE
+
+noun: (prep) NOUN (det) (posses) (noun_marker)
+
+//Marks the noun as direct or indirect object (subject is implicit)
+noun_marker: -KA | -KE
+
+//Denotes possession of the noun
+posses: -GA | -GI | -GO | -GE | -GOA | -GOE
+
+//Determiners for the noun (plurality, only, etc.)
+det: -NI | -NO
+
+//Potential prepositions for the noun
+prep: RE- | RA- | RI- | RO- | TI- | TA- 

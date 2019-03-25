@@ -1,0 +1,56 @@
+SET "alphabet" = abdegijklmnoprstx;
+SET "consonants" = bdgjklmnprstx;
+SET "vowels" = aeio;
+
+START "nouns":
+	txad: "place", bit: "person",
+	mots: "word", noil: "commitment",
+	naem: "name", jet: "rule",
+	miak: "feeling/emotion", mal: "pain",
+	kiax: "knowledge", mog: "item",
+	goam: "window", kiaxmog: "book",
+	smad: "machine", kiaxsmad: "computer",
+	#Pronouns
+	ji: "you", je: "I",
+	jo: "us", ja: "they/them",
+	joa: "him/he", joe: "her/she",
+	ran: "who", gio: "this",
+	dax: "what",
+	#Cardinal directions
+	stox: "north", stax: "south", stex: "east", stix: "west"
+END
+
+START "adjectives":
+	xot: "empty", glis: "happy",
+	ral: "good", akm: "new"
+END
+
+START "adverbs":
+	#Commented out adverbs-- don't need them
+	moa!: "yes", sil!: "how", srad!: "why",
+	tel!: "where", nej!: "when", nos!: "always"
+END
+
+START "conjuncs":
+	al: "and"
+END
+
+START "interjects":
+	sro: "hello", sra: "bye"
+END
+
+START "verbs":
+	slik: "meet", mer: "see", paet: "go",
+	sel: "say", xal: "is", xom: "want",
+	xam: "cause", skil: "give", goit: "know",
+	nilt: "think", tors: "love", diet: "understand",
+	kolt: "laugh"
+END
+
+START "verb inverses":
+	"meet": "diverge", "see": "listen", "go": "stay",
+	"say": "withhold", "is": "quit", "want": "don't want",
+	"cause": "stop", "give": "take", "know": "ignore",
+	"think": "reject", "love": "hate", "understand": "misunderstand",
+	"laugh": "cry"
+END
